@@ -6,10 +6,20 @@
 			<posy>130</posy>
 			<width>340</width>
 			<height>490</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="diffuse/listposter.png" background="true">$VAR[PosterImage]</texture>
+			<bordersize>20</bordersize>
+			<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+		</control>
+		<control type="image">
+			<posx>-12</posx>
+			<posy>130</posy>
+			<width>340</width>
+			<height>490</height>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<texture diffuse="diffuse/listposter.png" background="true">$VAR[PosterImage]</texture>
 			<bordersize>20</bordersize>
-			<visible>!Skin.Hassetting(views.cases)</visible>
+			<visible>!Skin.Hassetting(views.cases) + !SubString(Container.FolderPath,plugin://) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>-12</posx>
@@ -20,7 +30,7 @@
 			<texture background="true">$VAR[ShowcaseItem0Var]</texture>
 			<bordersize>20</bordersize>
 			<fadetime>0</fadetime>
-			<visible>Skin.Hassetting(views.cases) + !Skin.Hassetting(views.clearcases)</visible>
+			<visible>Skin.Hassetting(views.cases) + !Skin.Hassetting(views.clearcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>-12</posx>
@@ -31,7 +41,7 @@
 			<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
 			<bordersize>20</bordersize>
 			<fadetime>0</fadetime>
-			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.clearcases)</visible>
+			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.clearcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>-62</posx>
@@ -41,7 +51,7 @@
 			<texture background="true">boxes/$VAR[ShowcaseCasePathVar]/$VAR[GlobalCaseVar]</texture>
 			<aspectratio align="center" aligny="top">keep</aspectratio>
 			<bordersize>2</bordersize>
-			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.clearcases)</visible>
+			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.clearcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>-50</posx>
@@ -51,7 +61,7 @@
 			<texture background="true">boxes/$VAR[ShowcaseCasePathVar]/$VAR[GlobalCaseVar]</texture>
 			<aspectratio align="center" aligny="top">stretch</aspectratio>
 			<bordersize>2</bordersize>
-			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.colourcases)</visible>
+			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.colourcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>-49</posx>
@@ -61,7 +71,7 @@
 			<texture background="true">boxes/$VAR[ShowcaseCasePathVar]/$VAR[GlobalCaseVar]</texture>
 			<aspectratio align="center" aligny="top">stretch</aspectratio>
 			<bordersize>2</bordersize>
-			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.bddvdcases)</visible>
+			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.bddvdcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
 		</control>
 		<control type="image">
 			<posx>8</posx>
@@ -72,6 +82,18 @@
 			<texture flipy="true" diffuse="diffuse/listposter-ref.png" background="true">$VAR[PosterImage]</texture>
 			<animation effect="fade" start="100" end="30" time="160">Focus</animation>
 			<animation effect="fade" start="30" end="100" time="160">UnFocus</animation>
+			<visible>Skin.Hassetting(views.cases) + Skin.Hassetting(views.bddvdcases) + !SubString(Container.FolderPath,plugin://,left)+ !Container.Content(plugins) + !Container.Content(addons)</visible>
+		</control>
+		<control type="image">
+			<posx>8</posx>
+			<posy>601</posy>
+			<width>300</width>
+			<height>450</height>
+			<aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
+			<texture flipy="true" diffuse="diffuse/listposter-ref.png" background="true">$VAR[PosterImage]</texture>
+			<animation effect="fade" start="100" end="30" time="160">Focus</animation>
+			<animation effect="fade" start="30" end="100" time="160">UnFocus</animation>
+			<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
 		</control>
 		<control type="group">
 			<control type="image">

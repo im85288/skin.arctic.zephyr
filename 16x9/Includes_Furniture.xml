@@ -1109,6 +1109,67 @@
 			</control>
 		</control>
 	</include>
+	<include name="Furniture_Adv_Launcher">
+		<control type="group">
+			<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher,left)</visible>
+			<left>SidePad</left>
+			<centerbottom>NavBarPad</centerbottom>
+			<width>1920</width>
+			<height>120</height>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<itemgap>10</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="group">
+				<centertop>50%</centertop>
+				<height>50</height>
+				<control type="label">
+					<width min="128">auto</width>
+					<centertop>50%</centertop>
+					<height>64</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Year][/B]     [COLOR gray]$INFO[ListItem.Genre]     $INFO[ListItem.Studio][/COLOR]</label>
+					<font>Flag</font>
+					<textcolor>White</textcolor>
+					<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + !IsEmpty(ListItem.Year)</visible>
+				</control>
+				<control type="label">
+					<width min="128">auto</width>
+					<centertop>50%</centertop>
+					<height>64</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR gray]$INFO[ListItem.Genre]     $INFO[ListItem.Studio][/COLOR]</label>
+					<font>Flag</font>
+					<textcolor>White</textcolor>
+					<visible>[Control.IsVisible(50) | Control.IsVisible(550)] + IsEmpty(ListItem.Year)</visible>
+				</control>
+				<control type="label">
+					<width min="128">auto</width>
+					<centertop>50%</centertop>
+					<height>64</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label] ·$INFO[ListItem.Year]·[/B]     [COLOR gray]$INFO[ListItem.Genre]     $INFO[ListItem.Studio][/COLOR]</label>
+					<font>Flag</font>
+					<textcolor>White</textcolor>
+					<visible>!IsEmpty(ListItem.Year) + [!Control.IsVisible(50) | !Control.IsVisible(550)]</visible>
+				</control>
+				<control type="label">
+					<width min="128">auto</width>
+					<centertop>50%</centertop>
+					<height>64</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]     [COLOR gray]$INFO[ListItem.Genre]     $INFO[ListItem.Studio][/COLOR]</label>
+					<font>Flag</font>
+					<textcolor>White</textcolor>
+					<visible>IsEmpty(ListItem.Year) + [!Control.IsVisible(50) | !Control.IsVisible(550)]</visible>
+				</control>
+			</control>
+		</control>
+	</include>
 	<variable name="HeaderIcon">
 		<value condition="Window.IsVisible(DialogMuteBug.xml)">special://skin/extras/icons/mute.png</value>
 		<value condition="Window.IsVisible(DialogButtonMenu.xml)">special://skin/extras/icons/power.png</value>

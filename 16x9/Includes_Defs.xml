@@ -1185,6 +1185,83 @@
 			<visible>Control.IsVisible(157)</visible>
 		</control>
 	</include>
+	<include name="Def9000ProgramsMenuTop">
+		<left>0</left>
+		<top>115</top>
+		<width>455</width>
+		<height>1080</height>
+		<onleft>50</onleft>
+		<onright>ClearProperty(MediaMenu,Home)</onright>
+		<onright condition="![Window.IsVisible(tvguide) | Window.IsActive(SettingsCategory.xml)]">50</onright>
+		<onright condition="Window.IsVisible(tvguide)">10</onright>
+		<onright condition="Window.IsActive(SettingsCategory.xml)">3</onright>
+		<onup>9000</onup>
+		<ondown>9000</ondown>
+		<onback>ClearProperty(MediaMenu,Home)</onback>
+		<onback>50</onback>
+		<itemgap>0</itemgap>
+		<animation effect="slide" start="-440,0" end="0,0" time="400" tween="quadratic" easing="out">Visible</animation>
+		<control type="label" id="200">
+			<height>42</height>
+			<textoffsetx>15</textoffsetx>
+			<font>Home</font>
+			<label>View Options</label>
+			<textcolor>$VAR[ColourHighlight]</textcolor>
+			<aligny>center</aligny>
+		</control>
+		<control type="button" id="9326">
+			<description>View</description>
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>View: $INFO[Container.Viewmode]</label>
+			<onclick>XBMC.RunScript(script.arctic.zephyr.helper.jarvis,SETVIEW)</onclick>
+		</control>
+		<control type="button" id="3">
+			<description>Sort</description>
+			<include>DefContextButton2</include>
+			<align>left</align>
+		</control>
+		<control type="togglebutton" id="4">
+			<description>Ascending</description>
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>584</label>
+			<altlabel>585</altlabel>
+		</control>
+		<control type="radiobutton" id="9030" description="Plot Overlay">
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>31255</label>
+			<selected>Skin.HasSetting(furniture.overlayinfo)</selected>
+			<onclick>Skin.ToggleSetting(furniture.overlayinfo)</onclick>
+		</control>
+		<control type="radiobutton" id="9002" description="No Wrap (53)">
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>31148</label>
+			<selected>!Skin.HasSetting(53poster.nowrap)</selected>
+			<onclick>Skin.ToggleSetting(53poster.nowrap)</onclick>
+			<onclick>ReloadSkin()</onclick>
+			<visible>Control.IsVisible(53)</visible>
+		</control>
+		<control type="radiobutton" id="9012" description="Big List Double Pane (52)">
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>31235</label>
+			<selected>!Skin.HasSetting(52biglist.singlepane)</selected>
+			<onclick>Skin.ToggleSetting(52biglist.singlepane)</onclick>
+			<onclick>ReloadSkin()</onclick>
+			<visible>Control.IsVisible(52)</visible>
+		</control>
+		<control type="radiobutton" id="9022" description="Title Overlay (515)">
+			<include>DefContextButton2</include>
+			<align>left</align>
+			<label>Show title overlay</label>
+			<selected>Skin.HasSetting(views.titleoverlay)</selected>
+			<onclick>Skin.ToggleSetting(views.titleoverlay)</onclick>
+			<visible>Control.IsVisible(515)</visible>
+		</control>
+	</include>
 	<include name="Def9000MusicSide">
 		<left>0</left>
 		<top>115</top>

@@ -33,10 +33,22 @@
 									<posy>4</posy>
 									<width>200</width>
 									<height>282</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem9Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>7</posx>
+									<posy>4</posy>
+									<width>200</width>
+									<height>282</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem9Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>27</posx>
@@ -74,10 +86,22 @@
 									<posy>8</posy>
 									<width>234</width>
 									<height>331</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>13</posx>
+									<posy>8</posy>
+									<width>234</width>
+									<height>331</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>33</posx>
@@ -115,10 +139,22 @@
 									<posy>13</posy>
 									<width>266</width>
 									<height>380</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>19</posx>
+									<posy>13</posy>
+									<width>266</width>
+									<height>380</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>39</posx>
@@ -156,10 +192,22 @@
 									<posy>19</posy>
 									<width>300</width>
 									<height>427</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>25</posx>
+									<posy>19</posy>
+									<width>300</width>
+									<height>427</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>45</posx>
@@ -197,10 +245,22 @@
 									<posy>24</posy>
 									<width>332</width>
 									<height>478</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>30</posx>
+									<posy>24</posy>
+									<width>332</width>
+									<height>478</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>50</posx>
@@ -238,10 +298,22 @@
 									<posy>28</posy>
 									<width>366</width>
 									<height>528</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>36</posx>
+									<posy>28</posy>
+									<width>366</width>
+									<height>528</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>56</posx>
@@ -279,10 +351,22 @@
 									<posy>32</posy>
 									<width>398</width>
 									<height>577</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>42</posx>
+									<posy>32</posy>
+									<width>398</width>
+									<height>577</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>62</posx>
@@ -320,10 +404,22 @@
 									<posy>37</posy>
 									<width>432</width>
 									<height>626</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>48</posx>
+									<posy>37</posy>
+									<width>432</width>
+									<height>626</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>68</posx>
@@ -361,10 +457,22 @@
 									<posy>42</posy>
 									<width>466</width>
 									<height>676</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>54</posx>
+									<posy>42</posy>
+									<width>466</width>
+									<height>676</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>74</posx>
@@ -405,11 +513,31 @@
 									<posy>42</posy>
 									<width>466</width>
 									<height>676</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>54</posx>
+									<posy>42</posy>
+									<width>466</width>
+									<height>676</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
-									<visible>!Skin.Hassetting(views.cases)</visible>
+									<visible>!Skin.Hassetting(views.cases)+ !SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
+								</control>
+								<control type="label">
+									<posx>457</posx>
+									<posy>64</posy>
+									<width>45</width>
+									<height>45</height>
+									<font>symbolview</font>
+									<label>$VAR[IconOverlay0Var]</label>
+									<textcolor>$VAR[ColourHighlight2]</textcolor>
 								</control>
 								<control type="image">
 									<posx>65</posx>
@@ -486,10 +614,22 @@
 									<posy>4</posy>
 									<width>200</width>
 									<height>282</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>7</posx>
+									<posy>4</posy>
+									<width>200</width>
+									<height>282</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>27</posx>
@@ -531,10 +671,22 @@
 									<posy>4</posy>
 									<width>200</width>
 									<height>282</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>7</posx>
+									<posy>4</posy>
+									<width>200</width>
+									<height>282</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>27</posx>
@@ -572,10 +724,22 @@
 									<posy>8</posy>
 									<width>234</width>
 									<height>331</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>13</posx>
+									<posy>8</posy>
+									<width>234</width>
+									<height>331</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>33</posx>
@@ -613,10 +777,22 @@
 									<posy>13</posy>
 									<width>266</width>
 									<height>380</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>19</posx>
+									<posy>13</posy>
+									<width>266</width>
+									<height>380</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>39</posx>
@@ -654,10 +830,22 @@
 									<posy>19</posy>
 									<width>300</width>
 									<height>427</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>25</posx>
+									<posy>19</posy>
+									<width>300</width>
+									<height>427</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>45</posx>
@@ -695,10 +883,22 @@
 									<posy>24</posy>
 									<width>332</width>
 									<height>478</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>30</posx>
+									<posy>24</posy>
+									<width>332</width>
+									<height>478</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>50</posx>
@@ -736,10 +936,22 @@
 									<posy>28</posy>
 									<width>366</width>
 									<height>528</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>36</posx>
+									<posy>28</posy>
+									<width>366</width>
+									<height>528</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>56</posx>
@@ -777,10 +989,22 @@
 									<posy>32</posy>
 									<width>398</width>
 									<height>577</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>42</posx>
+									<posy>32</posy>
+									<width>398</width>
+									<height>577</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>62</posx>
@@ -813,6 +1037,17 @@
 							<animation effect="zoom" start="354,278,525,1228" end="-26,246,570,1334" time="200" reversible="false">Hidden</animation>
 							<control type="group">
 								<visible>!IsEmpty(Container.ListItemNoWrap(0).FolderPath)</visible>
+								<control type="image">
+									<posx>48</posx>
+									<posy>37</posy>
+									<width>432</width>
+									<height>626</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
 								<control type="image">
 									<posx>48</posx>
 									<posy>37</posy>
@@ -895,10 +1130,22 @@
 									<posy>-20</posy>
 									<width>466</width>
 									<height>676</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-1Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>0</posx>
+									<posy>-20</posy>
+									<width>466</width>
+									<height>676</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem-1Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<!--<control type="image"> <posx>500</posx> <posy>88</posy> <width>100</width> <height>588</height> <texture flipx="true" border="1">side_shadow.png</texture> </control> -->
 								<control type="image">
@@ -952,10 +1199,22 @@
 									<posy>4</posy>
 									<width>200</width>
 									<height>282</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>7</posx>
+									<posy>4</posy>
+									<width>200</width>
+									<height>282</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem8Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>27</posx>
@@ -1008,10 +1267,22 @@
 									<posy>8</posy>
 									<width>234</width>
 									<height>331</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>13</posx>
+									<posy>8</posy>
+									<width>234</width>
+									<height>331</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem7Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>33</posx>
@@ -1064,10 +1335,22 @@
 									<posy>13</posy>
 									<width>266</width>
 									<height>380</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>19</posx>
+									<posy>13</posy>
+									<width>266</width>
+									<height>380</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem6Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>39</posx>
@@ -1120,10 +1403,22 @@
 									<posy>19</posy>
 									<width>300</width>
 									<height>427</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>25</posx>
+									<posy>19</posy>
+									<width>300</width>
+									<height>427</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem5Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>45</posx>
@@ -1176,10 +1471,22 @@
 									<posy>24</posy>
 									<width>332</width>
 									<height>478</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>30</posx>
+									<posy>24</posy>
+									<width>332</width>
+									<height>478</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem4Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>50</posx>
@@ -1232,10 +1539,22 @@
 									<posy>28</posy>
 									<width>366</width>
 									<height>528</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>36</posx>
+									<posy>28</posy>
+									<width>366</width>
+									<height>528</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem3Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>56</posx>
@@ -1288,10 +1607,22 @@
 									<posy>32</posy>
 									<width>398</width>
 									<height>577</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>42</posx>
+									<posy>32</posy>
+									<width>398</width>
+									<height>577</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem2Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>62</posx>
@@ -1344,10 +1675,22 @@
 									<posy>37</posy>
 									<width>432</width>
 									<height>626</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>48</posx>
+									<posy>37</posy>
+									<width>432</width>
+									<height>626</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem1Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
+									<visible>!SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>68</posx>
@@ -1470,11 +1813,22 @@
 									<posy>42</posy>
 									<width>466</width>
 									<height>676</height>
+									<aspectratio scalediffuse="false">keep</aspectratio>
+									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
+									<bordersize>20</bordersize>
+									<fadetime>0</fadetime>
+									<visible>SubString(Container.FolderPath,plugin://,left) | Container.Content(plugins) | Container.Content(addons)</visible>
+								</control>
+								<control type="image">
+									<posx>54</posx>
+									<posy>42</posy>
+									<width>466</width>
+									<height>676</height>
 									<aspectratio scalediffuse="false">scale</aspectratio>
 									<texture background="true" diffuse="diffuse/listposter.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
 									<bordersize>20</bordersize>
 									<fadetime>0</fadetime>
-									<visible>!Skin.Hassetting(views.cases)</visible>
+									<visible>!Skin.Hassetting(views.cases) + !SubString(Container.FolderPath,plugin://,left) + !Container.Content(plugins) + !Container.Content(addons)</visible>
 								</control>
 								<control type="image">
 									<posx>65</posx>
@@ -1507,15 +1861,6 @@
 									<aspectratio align="center" aligny="top">keep</aspectratio>
 									<bordersize>2</bordersize>
 									<visible>Skin.Hassetting(views.cases)</visible>
-								</control>
-								<control type="image">
-									<posx>74</posx>
-									<posy>698</posy>
-									<width>426</width>
-									<height>636</height>
-									<aspectratio aligny="top" align="right" scalediffuse="false">stretch</aspectratio>
-									<texture background="true" flipy="true" diffuse="diffuse/listposter-ref.png" fallback="DefaultVideo.png">$VAR[ShowcaseItem0Var]</texture>
-									<fadetime>0</fadetime>
 								</control>
 								<control type="image">
 									<posx>74</posx>
