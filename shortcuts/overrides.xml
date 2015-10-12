@@ -40,6 +40,12 @@
     <widget label="31228">OnAirTvShows</widget>
     <widget label="31229">AiringTodayTvShows</widget>
 
+    <widgetdefaultnode defaultID="movies" group="mainmenu" label="Recommended" type="movies" path="plugin://script.skin.helper.service/?action=RECOMMENDEDMOVIES&amp;reload=$INFO[Window(Home).Property(widgetreload)]" target="video">recommendedmovies</widgetdefaultnode>
+    <widgetdefaultnode defaultID="tvshows" group="mainmenu" label="Recommended" type="movies" path="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]" target="video">recommendedepisodes</widgetdefaultnode>
+    <widgetdefaultnode defaultID="music" group="mainmenu" label="Recommended" type="music" path="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]" target="video">recommendedmusic</widgetdefaultnode>
+    <widgetdefaultnode defaultID="videos" group="mainmenu" label="Recommended and Random" type="movies" path="plugin://service.library.data.provider?type=recommendedepisodes+recommendedmovies+randommovies&amp;reload=$INFO[Window.Property(recommendedepisodes)]$INFO[Window.Property(recommendedmovies)]$INFO[Window.Property(randommovies)]" target="video">moviesandepisodes</widgetdefaultnode>
+    <widgetdefaultnode defaultID="livetv" group="mainmenu" label="TV Channels" type="movies" path="pvr://channels/tv/All&amp;channels/" target="video">tvchannels</widgetdefaultnode>
+
     <!-- Additional Common Items -->
     <shortcut label="31193" type="TVHub" grouping="common" icon="special://skin/extras/icons/tv.png">ActivateWindow(1102)</shortcut>
     <shortcut label="31192" type="MovieHub" grouping="common" icon="special://skin/extras/icons/film.png">ActivateWindow(1101)</shortcut>

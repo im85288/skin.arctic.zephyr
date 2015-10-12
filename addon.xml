@@ -12,7 +12,7 @@
 		<import addon="service.nextup.notification" version="1.0.5"/>
 		<import addon="script.skin.info.service" version="1.0.0"/>
 		<import addon="script.arctic.zephyr.helper.jarvis" version="1.0.0"/>
-        <import addon="script.skin.helper.service" version="1.0.0"/>
+        <import addon="script.skin.helper.service" version="0.0.1"/>
 		<import addon="script.toolbox" version="1.0.0"/>
 		<import addon="script.oscars.view" version="0.0.6"/>
 		<import addon="script.imdb250.view" version="0.0.5"/>

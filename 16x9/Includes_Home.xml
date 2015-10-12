@@ -327,112 +327,7 @@
 			</control>
 		</control>
 	</include>
-	<include name="HomeWidgetSelector">
-		<!-- Widget Selector -->
-		<control type="group">
-			<visible>![Window.IsVisible(home) + Skin.HasSetting(home.dontshowfanart) + IsEmpty(Container(300).ListItem.Property(widget))] + IsEmpty(Container(300).ListItem.Property(Background))</visible>
-			<animation effect="slide" end="0" start="0,-250" time="150" reversible="false" condition="ControlGroup(303).HasFocus()">Conditional</animation>
-			<animation effect="slide" start="0" end="0,-250" time="150" reversible="false" condition="!ControlGroup(303).HasFocus()">Conditional</animation>
-			<include>Animation.FadeOut</include>
-			<control type="image" description="TopBG">
-				<width>100%</width>
-				<top>0</top>
-				<height>100</height>
-				<aspectratio aligny="top">scale</aspectratio>
-				<texture colordiffuse="Background">common/bg.jpg</texture>
-				<animation effect="fade" start="100" end="75" time="200" condition="true">Conditional</animation>
-			</control>
-			<control type="image" description="FanartOverlay">
-				<width>100%</width>
-				<height>100</height>
-				<top>0</top>
-				<aspectratio aligny="bottom">scale</aspectratio>
-				<texture colordiffuse="FloorFade">common/floor.png</texture>
-			</control>
-			<control type="image" description="Shadow">
-				<width>100%</width>
-				<height>16</height>
-				<top>100</top>
-				<texture flipy="false">common/shadow16B.png</texture>
-			</control>
-			<control type="grouplist" id="303">
-				<include>Animation.FadeIn.Delay</include>
-				<include>Animation.FadeOut</include>
-				<description>Widget Selector</description>
-				<top>12</top>
-				<left>SidePad</left>
-				<right>SidePad</right>
-				<onup>301</onup>
-				<ondown>301</ondown>
-				<onleft>303</onleft>
-				<onright>303</onright>
-				<orientation>horizontal</orientation>
-				<scrolltime>200</scrolltime>
-				<itemgap>0</itemgap>
-				<control type="button" id="330">
-					<label>Spotlight</label>
-					<onfocus>SetProperty(widget,Spotlight,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="331">
-					<label>31127</label>
-					<onfocus>SetProperty(widget,RandomMovies,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="332">
-					<label>31124</label>
-					<onfocus>SetProperty(widget,RecentMovies,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<!-- <control type="button" id="333"> <label>31123</label> <onfocus>SetProperty(widget,RecommendedMovies,home)</onfocus> <include>DefWidgetSelector</include> </control> -->
-				<control type="button" id="334">
-					<label>31126</label>
-					<onfocus>SetProperty(widget,RandomEpisodes,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="335">
-					<label>31125</label>
-					<onfocus>SetProperty(widget,RecentEpisodes,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="336">
-					<label>31122</label>
-					<onfocus>SetProperty(widget,RecommendedEpisodes,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="337">
-					<label>31229</label>
-					<onfocus>SetProperty(widget,AiringTodayTvShows,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="338">
-					<label>31134</label>
-					<onfocus>SetProperty(widget,TrendingMovies,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="339">
-					<label>31135</label>
-					<onfocus>SetProperty(widget,TrendingShows,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="340">
-					<label>31224</label>
-					<onfocus>SetProperty(widget,PopularMovies,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="341">
-					<label>31227</label>
-					<onfocus>SetProperty(widget,TopRatedTvShows,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-				<control type="button" id="342">
-					<label>31225</label>
-					<onfocus>SetProperty(widget,TopRatedMovies,home)</onfocus>
-					<include>DefWidgetSelector</include>
-				</control>
-			</control>
-		</control>
-	</include>
+
 	<include name="HomeWidgetUpdating">
 		<!-- Container Updating -->
 		<control type="group">
@@ -485,8 +380,7 @@
 				<visible>!StringCompare(Container(300).ListItem.Property(widget),Favourites)</visible>
 				<width>1</width>
 				<height>1</height>
-				<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
-				<onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
+				<onup>300</onup>
 				<ondown>300</ondown>
 				<onback>300</onback>
 				<onleft>301</onleft>
@@ -508,8 +402,7 @@
 				<visible>StringCompare(Container(300).ListItem.Property(widget),NextAired) | StringCompare(Container(300).ListItem.Property(widget),Favourites)</visible>
 				<width>1</width>
 				<height>1</height>
-				<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
-				<onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
+				<onup>300</onup>
 				<ondown>300</ondown>
 				<onback>300</onback>
 				<onleft>301</onleft>
@@ -1060,8 +953,7 @@
 						<right>70</right>
 						<top>20</top>
 						<bottom>20</bottom>
-						<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
-						<onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
+						<onup>300</onup>
 						<ondown>300</ondown>
 						<onback>300</onback>
 						<onleft>301</onleft>
@@ -1224,8 +1116,7 @@
 						<right>70</right>
 						<top>20</top>
 						<bottom>20</bottom>
-						<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
-						<onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
+						<onup>300</onup>
 						<ondown>300</ondown>
 						<onback>300</onback>
 						<onleft>301</onleft>
@@ -1286,8 +1177,7 @@
 						<right>70</right>
 						<top>20</top>
 						<bottom>20</bottom>
-						<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
-						<onup condition="!IsEmpty(Container(300).ListItem.Property(widget))">300</onup>
+						<onup>300</onup>
 						<ondown>300</ondown>
 						<onback>300</onback>
 						<onleft>301</onleft>
@@ -2691,7 +2581,6 @@
 						<onback>300</onback>
 						<onleft>300</onleft>
 						<onup>3634</onup>
-						<onup condition="IsEmpty(Container(300).ListItem.Property(widget))">303</onup>
 						<onup>300</onup>
 						<ondown>300</ondown>
 						<focusposition>0</focusposition>

@@ -460,6 +460,13 @@
 						<selected>Skin.HasSetting(osd.showinfoonpause)</selected>
 						<onclick>Skin.ToggleSetting(osd.showinfoonpause)</onclick>
 					</control>
+					<control type="button" id="92366">
+						<width>1310</width>
+						<visible>ControlGroup(9100).HasFocus(9102)</visible>
+						<include>DefSettingsButton2</include>
+						<label>$LOCALIZE[31230]: $INFO[skin.string(SkinHelper.ShowInfoAtPlaybackStart)] $LOCALIZE[31231]</label>
+						<onclick>Skin.SetNumeric(SkinHelper.ShowInfoAtPlaybackStart)</onclick>
+					</control>
 					<control type="radiobutton" id="9237" description="Show clearart">
 						<width>1310</width>
 						<visible>ControlGroup(9100).HasFocus(9103)</visible>
